@@ -11,13 +11,10 @@ function testFunc() {
 }
 
 function superbowlWin(array) {
-  debugger
-  let win = array.find(function (obj) {return obj.result === "W"})
+  let win = array.find(obj => (obj.result === "W"))
   if (win) {
     return win.year
   } else {
     return win
   }
 }
-
-// superbowlWin(record);
